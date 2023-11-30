@@ -12,14 +12,14 @@ export default function RecipeCard({
     <>
       <div
         className="card w-96 bg-primary-content text-neutral-focus shadow-xl "
-        style={{ maxWidth: "300px" }}
+        style={{ maxWidth: "300px", height:"400px"}}
       >
         <figure>
           <img src={image} alt="recipe" />
         </figure>
-        <div className="card-body justify-between text-left">
+        <div className="card-body justify-between text-left bg-[#fbf5ee]">
           <h2 className="card-title">{name}</h2>
-          <span>COOKING TIME: {cooking_time} Minutes</span>
+          <span>COOKING TIME: {cooking_time === 0 ? 20 : cooking_time} Minutes</span>
           <span>CALORIES: {calories.toFixed(2)} </span>
         </div>
       </div>

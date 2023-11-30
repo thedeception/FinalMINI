@@ -112,7 +112,7 @@ export default function Home() {
           totalRecipes={!isLoading && response.count}
         />
       </header>
-      <div className="container m-auto text-center md:text-left text-zinc-950 text-4xl font-garamond p-4 " style={{ color: '#6B4C11' }}>
+      <div className="container m-auto text-center md:text-left text-zinc-950 text-4xl p-4 font-semibold" style={{ color: '#6B4C11' }}>
         INGREDIENTS
       </div>
       <form
@@ -121,28 +121,25 @@ export default function Home() {
       >
         <input
           type="text"
-          style={{ width: "calc(100% - 131px)" }}
+          // style={{ width: "calc(100% - 131px)" }}
           placeholder="Search…"
           value={search}
           onInput={handleSearch}
-          className="input bg-primary-content "
+          className="p-2 bg-primary-content border border-[#dedede] rounded-lg w-full mx-5"
         />
         
         <label className="cursor-pointer" htmlFor="filter">
           {" "}
-          <HiFilter size={25} />
+          <HiFilter className="text-[#6b4c11]" size={35} />
         </label>
-        <span className="flex" style={{ backgroundColor: '#efe2ba', color: '#6B4C11' }}>
-          ({!isLoading && response && response.count} Recipes)
-        </span>
       </form>
 
       <Filter
         handleCheckboxChange={handleCheckboxChange}
         selectedValue={selectedValue}
       />
-      <div className="container m-auto text-center md:text-left text-zinc-950 text-4xl  font-palatino p-4" style={{ color: '#6B4C11' }}>
-        Search Results
+      <div className="container m-auto text-center md:text-left text-zinc-950 text-4xl font-semibold p-4" style={{ color: '#6B4C11' }}>
+        SEARCH RESULTS
       </div>
 
       <div className="container flex gap-11 justify-center flex-wrap m-auto">
@@ -162,8 +159,8 @@ export default function Home() {
         {isLoading && <CardSkeleton cards={recipeNumber} />}
       </div>
       <button
-      className="btn w-44 text-slate-950 btn-outline my-6" style={{ backgroundColor: '#6B4C11', color: '#efe2ba' }}
-      disabled={!isLoading && !response.more}
+            className="btn w-44 text-slate-950 btn-outline my-6 hover:shadow-2xl" style={{ backgroundColor: '#6B4C11', color: '#efe2ba' }}
+            disabled={!isLoading && !response.more}
       onClick={handleLoadMore}
       >
         Load More

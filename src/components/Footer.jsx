@@ -1,15 +1,16 @@
 import React from "react";
 import logo from "../assets/footer logo.png";
 import { FiYoutube, FiFacebook } from "react-icons/fi";
+import WFDLogo from "../assets/What'sForDinnerLogo.png"
 import { RxInstagramLogo } from "react-icons/rx";
 import { TbBrandTwitter } from "react-icons/tb";
 export default function Footer() {
   return (
-    <div className="footer_container "style={{ color: '#e1eedd' }}>
-    <footer className="footer p-10 text-neutral-focus justify-items-center md:justify-items-stretch justify-between" style={{ color: '#183a1d', fontWeight: 'bold' }}>
+    <div className="bg-[#e1eedd] px-32"style={{ color: '#e1eedd' }}>
+    <footer className="bg-[#e1eedd] footer p-10 text-neutral-focus justify-items-center md:justify-items-stretch justify-between" style={{ color: '#183a1d', fontWeight: 'bold' }}>
         <div className="justify-items-center md:justify-items-stretch">
-          <a href="/">
-            <img src={logo} alt="recipe logo" style={{ height: "50px" }} />
+          <a href="/home">
+            <img src={WFDLogo} alt="recipe logo" style={{ height: "50px" }} />
           </a>
           <span className="text-left" style={{ maxWidth: "300px" }}>
           "Cooking is an art, but all art requires knowing something about the techniques and materials. 
@@ -18,9 +19,8 @@ export default function Footer() {
 
           </span>
         </div>
-        <div>
-          <span className="footer-title" style={{ color: '#4056a1' }}>What's For Dinner</span>
-          <a className="footer-title"style={{ color: '#4056a1' }}>About us</a>
+        <div className="mt-7">
+          <a className=""style={{ color: '#4056a1' }}>About Us</a>
           <span className="text-left" style={{ maxWidth: "300px" }}>
           Welcome to What's For Dinner, your trusted partner in the world of gastronomy! 
           We are more than just a software; we are your culinary confidante, 
@@ -28,16 +28,16 @@ export default function Footer() {
           </span>
           
         </div>
-        <div>
-          <span className="footer-title"style={{ color: '#4056a1' }}>Our Mission</span>
+        <div className="mt-7">
+          <span className=""style={{ color: '#4056a1' }}>Our Mission</span>
           <span className="text-left" style={{ maxWidth: "300px" }}>
           At What's For Dinner, we believe that cooking should be a delightful journey, 
           and we're here to make that journey both exciting and accessible. 
           Our mission is to empower home cooks and professional chefs alike by providing instant and creative recipe solutions based on the ingredients you have at hand.
           </span>
         </div>
-        <div>
-          <span className="footer-title"style={{ color: '#4056a1' }}>Features</span>
+        <div className="mt-7">
+          <span className=""style={{ color: '#4056a1' }}>Features</span>
           <a className="link link-hover">User-Friendly Interface</a>
           <a className="link link-hover">Versatility and Flexibility</a>
           <a className="link link-hover">Efficiency</a>

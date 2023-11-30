@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <SkeletonTheme baseColor="#e1eedd" highlightColor="#ffffff">
     <React.StrictMode>
-      <App />
-      <div className="bg-slate-50"style={{ color: '#e1eedd' }}>
+      <App/>
+      <div className="bg-[#e1eedd]"style={{ color: '#e1eedd' }}>
         <Footer />
       </div>
     </React.StrictMode>
