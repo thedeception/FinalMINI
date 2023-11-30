@@ -104,19 +104,22 @@ export default function Home() {
   };
 
   return (
-    <>
-      <header className="container m-auto pb-28">
+    <div className="min-h-screen flex flex-col overflow-auto">
+      <header className="container fixed  w-[88%]  pb-8  m-auto ">
         <Navbar
           from={from}
           to={to}
           totalRecipes={!isLoading && response.count}
         />
       </header>
-      <div className="container m-auto text-center md:text-left text-zinc-950 text-4xl p-4 font-semibold" style={{ color: '#6B4C11' }}>
+      <div
+        className="container m-auto mt-24 text-center md:text-left text-zinc-950 text-4xl p-4 font-semibold"
+        style={{ color: "#6B4C11" }}
+      >
         INGREDIENTS
       </div>
       <form
-        className="container m-auto flex justify-center gap-1 items-center pb-6 "
+        className="container m-auto flex justify-center gap-1 items-center pb-2 "
         onSubmit={handleSubmit}
       >
         <input
@@ -127,7 +130,7 @@ export default function Home() {
           onInput={handleSearch}
           className="p-2 bg-primary-content border border-[#dedede] rounded-lg w-full mx-5"
         />
-        
+
         <label className="cursor-pointer" htmlFor="filter">
           {" "}
           <HiFilter className="text-[#6b4c11]" size={35} />
@@ -138,11 +141,14 @@ export default function Home() {
         handleCheckboxChange={handleCheckboxChange}
         selectedValue={selectedValue}
       />
-      <div className="container m-auto text-center md:text-left text-zinc-950 text-4xl font-semibold p-4" style={{ color: '#6B4C11' }}>
+      <div
+        className="container m-auto text-center md:text-left text-zinc-950 text-4xl font-semibold p-4"
+        style={{ color: "#6B4C11" }}
+      >
         SEARCH RESULTS
       </div>
 
-      <div className="container flex gap-11 justify-center flex-wrap m-auto">
+      <div className="container flex gap-11 justify-center h-[50vh] overflow-scroll flex-wrap m-auto">
         {recipe.map((recipe) => (
           <Link to={`/${recipe.recipe.label}`} state={recipe.recipe}>
             <RecipeCard
@@ -159,12 +165,13 @@ export default function Home() {
         {isLoading && <CardSkeleton cards={recipeNumber} />}
       </div>
       <button
-            className="btn w-44 text-slate-950 btn-outline my-6 hover:shadow-2xl" style={{ backgroundColor: '#6B4C11', color: '#efe2ba' }}
-            disabled={!isLoading && !response.more}
-      onClick={handleLoadMore}
+        className="btn w-44 text-slate-950 btn-outline my-6 hover:shadow-2xl"
+        style={{ backgroundColor: "#6B4C11", color: "#efe2ba" }}
+        disabled={!isLoading && !response.more}
+        onClick={handleLoadMore}
       >
         Load More
       </button>
-    </>
+    </div>
   );
 }

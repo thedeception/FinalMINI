@@ -2,7 +2,7 @@
   "appId": "com.recipe.app",
   "appName": "Recipe",
   "bundledWebRuntime": false,
-  "webDir": "dist",
+  "webDir": "../build",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0

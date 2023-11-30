@@ -9,7 +9,7 @@ export default function Navbar({ from, to, totalRecipes }) {
     <>
       <div className="navbar justify-center bg-[#e1eedd] text-neutral-focus shadow-md w-full rounded-xl">
         <div className="flex md:order-1 order-2 ">
-          <a href="/home">
+          <a href="/">
             <img
               src={WFDLogo}
               alt="recipe logo"

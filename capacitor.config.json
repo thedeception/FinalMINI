@@ -1,0 +1,8 @@
+{
+  "appId": "com.recipe.app",
+  "appName": "recipe",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "https"
+  }
+}

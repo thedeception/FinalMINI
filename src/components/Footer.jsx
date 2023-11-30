@@ -6,10 +6,10 @@ import { RxInstagramLogo } from "react-icons/rx";
 import { TbBrandTwitter } from "react-icons/tb";
 export default function Footer() {
   return (
-    <div className="bg-[#e1eedd] px-32"style={{ color: '#e1eedd' }}>
-    <footer className="bg-[#e1eedd] footer p-10 text-neutral-focus justify-items-center md:justify-items-stretch justify-between" style={{ color: '#183a1d', fontWeight: 'bold' }}>
+    <div className="bg-[#e1eedd]  md:px-32"style={{ color: '#e1eedd' }}>
+    <footer className="bg-[#e1eedd] footer p-10 text-neutral-focus justify-items-center md:flex md:justify-items-stretch hidden" style={{ color: '#183a1d', fontWeight: 'bold' }}>
         <div className="justify-items-center md:justify-items-stretch">
-          <a href="/home">
+          <a href="/">
             <img src={WFDLogo} alt="recipe logo" style={{ height: "50px" }} />
           </a>
           <span className="text-left" style={{ maxWidth: "300px" }}>
@@ -44,8 +44,8 @@ export default function Footer() {
           <a className="link link-hover">Creativity</a>
         </div>
       </footer>
-      <footer className="footer px-10 py-4 border-t justify-items-center md:justify-items-stretch  border-gray-300">
-        <div className="items-center grid-flow-col"style={{ color: '#183a1d' }}>
+      <footer className="footer w-full md:px-10 py-4 border-t justify-items-center flex border-gray-300">
+        <div className="items-center w-full justify-center flex"style={{ color: '#183a1d' }}>
           <p>@What's For Dinner- Akash A S</p>
         </div>
       </footer>

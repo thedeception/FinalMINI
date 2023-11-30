@@ -11,9 +11,9 @@ root.render(
   <SkeletonTheme baseColor="#e1eedd" highlightColor="#ffffff">
     <React.StrictMode>
       <App/>
-      <div className="bg-[#e1eedd]"style={{ color: '#e1eedd' }}>
+      {/* <div className="bg-[#e1eedd]"style={{ color: '#e1eedd' }}>
         <Footer />
-      </div>
+      </div> */}
     </React.StrictMode>
   </SkeletonTheme>
 );
