@@ -1,0 +1,14 @@
+{
+  "appId": "com.recipe.app",
+  "appName": "Recipe",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.footer_container {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.App-header {
+  background-color: #f6c453;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: #f6c453;
+}
